@@ -5,7 +5,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-   
+    font-family: roboto;
 }
 
 
@@ -37,10 +37,63 @@ body {
     color: white;
 }
 
+.dash-icon {
+    position: absolute;
+    left: 15px;
+}
+
 .navigation {
     margin-left: 20px;
 }
 
+.home {
+    position: absolute;
+    left: 35px;
+    top: 120px;
+}
+
+.profile {
+    position: absolute;
+    left: 35px;
+    top: 154px;
+}
+
+.message {
+    position: absolute;
+    left: 35px;
+    top: 195px;
+}
+
+.history {
+    position: absolute;
+    left: 35px;
+    top: 230px;
+}
+
+.task {
+    position: absolute;
+    left: 35px;
+    top: 265px;
+}
+
+.setting {
+    position: absolute;
+    left: 35px;
+    top: 332px;
+}
+
+.help {
+    position: absolute;
+    left: 35px;
+    top: 370px;
+}
+
+
+.privacy {
+    position: absolute;
+    left: 35px;
+    top: 405px;
+}
 
 .header {
     background-color: whitesmoke;
@@ -58,35 +111,53 @@ input[type = "text"] {
     justify-self: center;
 }
 
+input[type = "text"]:focus {
+    border: solid rgba(143, 119, 119, 0.473) 1.2px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 400px;
+    top: 17px;
+}
+
 .header-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     font-size: 1.5rem;
-    background-color: var(--bg-color)
+    background-color: var(--bg-color);
+    padding-top: 15px;
 }
 
 .para-head {
     width: 100%;
     grid-column: 2/3;
     color: white;
-   
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.xbox {
+    position: absolute;
+    right: 290px;
+    border-radius: 50px;
+}
+
+
 .account-img {
     position: absolute;
-    right: 470px;
-    top: 45px;
+    right: 475px;
+    top: 56px;
 }
 
 
 .bell {
     position: absolute;
-    right: 310px;
-    top: 50px;
+    right: 60px;
+    top: 60px;
 }
 
 .header-bottom {
@@ -94,10 +165,33 @@ input[type = "text"] {
     grid-template-columns: 1fr 1fr;
 }
 
+
+.greeting {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    justify-items: start;
+    align-items: end;
+    padding-left: 95px;
+}
+
+.greeting > h1 {
+    font-size: 1.7rem;
+}
+
+.x-pic {
+    position: absolute;
+    border-radius: 50px;
+    left: 280px;
+    top: 160px;
+}
+
+
+
 .proj {
-    display: flex;
-    justify-content: flex-start;
     padding-left: 15px;
+    position: absolute;
+    top: 300px;
+    left: 290px;
 }
 
 
@@ -106,54 +200,79 @@ input[type = "text"] {
     justify-self: center;
     display: flex;
     width: 50%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 button {
-    background-color: rgb(39, 157, 204);
-    font-size: 1.3rem;
+    background-color: var(--bg-color);
+    font-size: 1.2rem;
     color: white;
-    border-radius: 35px;
+    border-radius: 30px;
     border: solid var(--bg-color);
     padding:10px;
+    width: 100px;
 }
 
 .main-content {
    grid-column: 2/5;
    grid-row: 2/5;
-   background-color: rgba(241, 205, 205, 0.651);
+   background-color: rgba(243, 224, 224, 0.651);
    display: grid;
    grid-template-columns: 2fr 1fr;
 }
 
+
+
 .cont-left {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-    grid-template-rows: 250px;
+    grid-template-rows: 315px;
     justify-items: center;
-    gap: 20px;
+    align-items: end;
+    gap: 25px;
+    padding-left: 25px;
+    padding-bottom: 40px;
 }
 
 .cont-right {
     display: grid;
+    padding-top: 20px;
     grid-template-columns: 1fr;
+    grid-template-rows: 50px 90px;
     justify-items: center;
     align-items: center;
 }
 
 
 .cards {
-    border: solid black;
+    box-shadow: 0 0 .6rem 0 rgb(204, 217, 221);
+    padding: 15px;
     height:200px;
     background-color: whitesmoke;
     border-radius: 12px;
+
 }
 
 
 .announcement-card,
 .trending-card {
-    border: solid black;
+    box-shadow: 0 0 .6rem 0 rgb(204, 217, 221); ;
+    border-radius: 12px;
+    padding: 15px;
     height: 230px;
     width: 250px;
     background-color: whitesmoke;
 }
+
+.announcement-card {
+    align-self: start;
+}
+
+.cont-right > h2 {
+    align-self: end;
+}
+
+.trending-card {
+    align-self: start;
+}
+
